@@ -1,0 +1,7 @@
+export const LOAD = "LOAD"
+export const LOADCAT = "LOADCAT"
+export const SETCAT = "SETCAT"
+export const SETCONFIG = "SETCONFIG"
+export const DEL = "DEL"
+export const LOGIN = "LOGIN"
+export const LOGOUT = "LOGOUT"

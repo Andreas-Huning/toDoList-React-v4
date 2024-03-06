@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    line-height: 1.5;
+    background-color: #243848;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+  }
+  .container-main {
+    width: 90vw;
+    background-color: #314453;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+  }
+  h2 {
+    margin-bottom: 15px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+  }
+  .infomation{
+    font-size: 0.8rem;
+    color: red;
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+  }
+  .logout{
+    color: white;
+    margin: 10px 0;
+    text-align: center;
+    cursor: pointer;
+  }
+  .todo-container{
+    background: #243848;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    margin-top: 50px;
+    padding: 20px;
+  }
+  .formular {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inputfield{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  .inputfieldnumber{
+    margin: 5px 10px;
+    width: 50px;
+  }
+  
+  .table-container{
+    margin: 2rem 0;
+    padding: 10px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    table-layout: auto;
+  }
+  .table-container label{
+    color: white;
+  }
+ .todo-container label{
+  color: white;
+ }
+ .todo-container label input{
+  margin: 10px 0px;
+ }
+  table{
+    min-width: 50vw;
+    background-color: white;
+    text-align: left;
+    padding: 16px;
+    border: 5px solid #243848;
+    border-radius: 10px;
+    border-collapse: collapse;
+  }
+  tr:nth-child(even){
+    background-color: #314453;
+    color: white;
+  }
+  td,th{
+    margin: 5px;
+    padding: 10px;
+  }
+  thead{
+    border-bottom: 2px solid #243848;
+  }
+  
+  td:last-child, td:nth-last-child(2) {
+    cursor: pointer;
+  }
+  button{
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-right: 10px; 
+  }
+  .delEditImage{
+    width: 20px;
+    height: 20px;
+  }
+  
+.progressbar-container{
+  width: 100%; 
+  background-color: white; 
+  border-radius: 5px; 
+  height: 30px; 
+  margin-bottom: 10px; 
+  overflow: hidden; 
+  position: relative; 
+  border: 1px solid black;
+}
+.progressbar-balken{
+  height: 100%;
+  line-height: 30px; 
+  color: white; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  transition: width 0.3s ease-in-out;
+}
+.progressbar-text{
+  width: 100%; 
+  height: 100%; 
+  line-height: 30px; 
+  color: black; 
+  text-align: center; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  pointer-events: none;
+}
+.catAuswahl, .catAuswahl > option {
+  margin: 10px;
+  padding: 5px;
+}
+  @media (max-width: 790px) {
+    .container-main {
+      width: 100vw;
+    }
+    .todo-container {
+      width: 95%;
+      border: 1px solid rgb(255, 255, 255, 0.3);
+    }
+    .inputfield {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+    button{
+      margin-top: 10px;
+    }
+    table{
+      min-width: 90vw;  
+      font-size: 0.7rem;
+    }
+    table td:nth-child(1),
+    table th:nth-child(1),
+    table td:nth-child(2),
+    table th:nth-child(2),
+    table td:nth-child(5),
+    table th:nth-child(5) {
+        display: none;
+    }
+  }
